@@ -13,7 +13,7 @@ LABEL Install Artifactory
 
 EXPOSE 8081
 
-ADD runArtifactory.sh /tmp/run.sh
+ADD Start-Artifactory.sh /tmp/run.sh
 RUN chmod +x /tmp/run.sh && \
     yum install -y --enablerepo="Artifactory-oss" jfrog-artifactory-oss
 
